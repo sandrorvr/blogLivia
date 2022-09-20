@@ -39,6 +39,7 @@
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li class="colorlib-active"><a href={% url 'index' %}>Home</a></li>
+					<li><a href={% url 'single' %}>Single</a></li>
 					<li><a href={% url 'about' %}>About</a></li>
 				</ul>
 			</nav>
@@ -94,7 +95,7 @@
 									<p class="mb-4">{{post.descriptionPost}}</p>
 									<div class="meta-wrap align-items-center">
 										<div class="half">
-											<p><a href="#" class="btn py-2">Continue De Lire <span
+											<p><a href={% url 'article' post.id %} class="btn py-2">Continue De Lire <span
 														class="ion-ios-arrow-forward"></span></a></p>
 										</div>
 									</div>

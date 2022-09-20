@@ -73,17 +73,15 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 ftco-animatedd">
-							{% for dt in detail %}
-							<h2 class="mb-3 font-weight-bold">{{dt.post}}</h2>
+							<h2 class="mb-3 font-weight-bold">{{detail.post}}</h2>
 							<p style="text-align: center;">
-								<img src="{{dt.post.image.url}}" alt="" class="img-fluid">
+								<img src="{{detail.post.image.url}}" alt="" class="img-fluid">
 							</p>
 							{% autoescape off %}
 							<p style="text-align: justify;">
-								{{dt.contentPost}}
+								{{detail.contentPost}}
 							</p>
 							{% endautoescape off %}
-							{% endfor %}
 						</div> <!-- .col-md-8 -->
 						
 					</div>
